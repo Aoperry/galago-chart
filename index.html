@@ -3,7 +3,11 @@
 <head>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    body { background-color: #1A2A2A; margin: 0; padding: 0; }
+    body { background-color: #1A2A2A; margin: 0; padding: 5; }
+    <header style="background-color: #1A2A2A; color: #00FFAA; text-align: center; padding: 10px;">
+  <h1>Galago Tactical Performance</h1>
+  <p>Tactical Investing for Smarter Growth</p>
+</header>
     .chart-container { width: 800px; height: 400px; margin: 0 auto; }
   </style>
 </head>
@@ -18,14 +22,14 @@
       data: {
         labels: ['Jan 2025', 'Feb 2025', 'Mar 2025', 'Apr 2025', 'May 2025', 'Jun 2025'],
         datasets: [{
-          label: 'Galago Tactical Returns',
+          label: 'Galago Tactical Historical Performance',
           data: [2, 5, 3, 8, 6, 9], // Example data, replace with real returns
           borderColor: '#00FFAA',
           backgroundColor: 'rgba(0, 255, 170, 0.2)',
           fill: false,
           tension: 0.1
         }, {
-          label: 'S&P 500 Returns',
+          label: 'S&P 500 Historical Performance',
           data: [1, 4, 2, 6, 5, 7], // Example data, replace with real S&P 500 data
           borderColor: '#FFFFFF',
           backgroundColor: 'rgba(255, 255, 255, 0.2)',
@@ -44,5 +48,8 @@
       }
     });
   </script>
+  <footer style="background-color: #1A2A2A; color: #FFFFFF; text-align: center; padding: 10px; margin-top: 10px;">
+  <p>&copy; 2025 Galago Tactical | <a href="https://www.galagolp.com/" style="color: #00FFAA;">Contact Us</a></p>
+</footer>
 </body>
 </html>
