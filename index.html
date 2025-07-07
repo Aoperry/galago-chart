@@ -3,34 +3,39 @@
 <head>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    body { background-color: #1A2A2A; margin: 0; padding: 5; }
-    <header style="background-color: #1A2A2A; color: #00FFAA; text-align: center; padding: 10px;">
-  <h1>Galago Tactical Performance</h1>
-  <p>Tactical Investing for Smarter Growth</p>
-</header>
+    body { background-color: #1A2A2A; margin: 0; padding: 0; font-family: Arial, sans-serif; }
     .chart-container { width: 800px; height: 400px; margin: 0 auto; }
+    header { background-color: #1A2A2A; color: #00FFAA; text-align: center; padding: 20px; }
+    footer { background-color: #1A2A2A; color: #FFFFFF; text-align: center; padding: 10px; margin-top: 10px; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Galago Tactical Performance</h1>
+    <p>Tactical Investing for Smarter Growth - June 2025</p>
+  </header>
   <div class="chart-container">
     <canvas id="myChart"></canvas>
   </div>
+  <footer>
+    <p>© 2025 Galago Tactical | <a href="https://www.galagolp.com/" style="color: #00FFAA;">Contact Us</a></p>
+  </footer>
   <script>
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ['Jan 2025', 'Feb 2025', 'Mar 2025', 'Apr 2025', 'May 2025', 'Jun 2025'],
+        labels: ['Jun 2', 'Jun 9', 'Jun 16', 'Jun 23', 'Jun 30', 'Jul 1'],
         datasets: [{
-          label: 'Galago Tactical Historical Performance',
-          data: [2, 5, 3, 8, 6, 9], // Example data, replace with real returns
+          label: 'Galago Tactical Returns',
+          data: [0, 0.5, 1.0, 1.5, 2.0, 2.1], // Placeholder data, replace with actual Galago returns
           borderColor: '#00FFAA',
           backgroundColor: 'rgba(0, 255, 170, 0.2)',
           fill: false,
           tension: 0.1
         }, {
-          label: 'S&P 500 Historical Performance',
-          data: [1, 4, 2, 6, 5, 7], // Example data, replace with real S&P 500 data
+          label: 'S&P 500 Returns',
+          data: [0, 1.18, 1.64, 1.52, 4.55, 4.44], // Calculated returns based on price changes
           borderColor: '#FFFFFF',
           backgroundColor: 'rgba(255, 255, 255, 0.2)',
           fill: false,
@@ -48,8 +53,5 @@
       }
     });
   </script>
-  <footer style="background-color: #1A2A2A; color: #FFFFFF; text-align: center; padding: 10px; margin-top: 10px;">
-  <p>&copy; 2025 Galago Tactical | <a href="https://www.galagolp.com/" style="color: #00FFAA;">Contact Us</a></p>
-</footer>
 </body>
 </html>
